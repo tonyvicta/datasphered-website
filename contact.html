@@ -54,14 +54,14 @@
         </ul>
       </div>
       <div class="card rv">
-        <form class="form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+        <form class="form" id="contactForm" novalidate>
         <div class="field">
           <label for="first_name">First name</label>
-          <input id="first_name" name="first_name" type="text" autocomplete="on">
+          <input id="first_name" name="first_name" type="text" autocomplete="given-name">
         </div>
         <div class="field">
           <label for="last_name">Last name</label>
-          <input id="last_name" name="last_name" type="text" autocomplete="on">
+          <input id="last_name" name="last_name" type="text" autocomplete="family-name">
         </div>
         <div class="field">
           <label for="email">Email address *</label>
@@ -77,17 +77,18 @@
         </div>
         <div class="field">
           <label for="position">Position</label>
-          <input id="position" name="position" type="text" autocomplete="on">
+          <input id="position" name="position" type="text" autocomplete="organization-title">
         </div>
         <div class="field full">
           <label for="message">How can we help?</label>
           <textarea id="message" name="message" placeholder="Tell us about your data platform and the outcomes you need."></textarea>
         </div>
-          <div class="full">
-            <button class="btn btn--p" type="submit" style="width:100%">Send message <span class="arrow">&rarr;</span></button>
-            <p style="font-size:.82rem;margin-top:.9rem;color:var(--muted2)">By sending this form you agree to our <a href="/privacy-policy" style="color:var(--acc)">privacy policy</a>.</p>
-          </div>
-        </form>
+        <div class="full">
+          <button class="btn btn--p" type="submit" style="width:100%">Send message <span class="arrow">&#8594;</span></button>
+          <p id="formStatus" role="status" aria-live="polite" style="font-size:.85rem;margin-top:.9rem;display:none"></p>
+          <p style="font-size:.82rem;margin-top:.9rem;color:var(--muted2)">By sending this form you agree to our <a href="/privacy-policy" style="color:var(--acc)">privacy policy</a>.</p>
+        </div>
+      </form>
       </div>
     </div>
   </section>
@@ -129,5 +130,30 @@
   </div>
 </footer>
 <script src="/app.js" defer></script>
+<script>
+(function(){
+  var f=document.getElementById("contactForm"); if(!f) return;
+  var s=document.getElementById("formStatus");
+  var g=function(id){var el=document.getElementById(id); return el?el.value.trim():"";};
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var email=g("email");
+    if(!email||email.indexOf("@")<1||email.indexOf(".")<0){ s.style.display="block"; s.style.color="#ff9b9b"; s.textContent="Please enter a valid email address so we can reply to you."; return; }
+    var name=(g("first_name")+" "+g("last_name")).trim();
+    var L=[];
+    if(name) L.push("Name: "+name);
+    L.push("Email: "+email);
+    if(g("company")) L.push("Company: "+g("company"));
+    if(g("phone")) L.push("Phone: "+g("phone"));
+    if(g("position")) L.push("Position: "+g("position"));
+    L.push(""); L.push(g("message")||"(no message provided)");
+    var subj="Website enquiry"+(name?" from "+name:"");
+    var url="mailto:consulting@datasphered.com"+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(L.join("\n"));
+    window.location.href=url;
+    s.style.display="block"; s.style.color="var(--acc)";
+    s.textContent="Opening your email app with this message ready to send. If nothing opens, please email consulting@datasphered.com directly.";
+  });
+})();
+</script>
 </body>
 </html>
