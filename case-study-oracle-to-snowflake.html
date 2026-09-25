@@ -5,47 +5,56 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Case study: Oracle to Snowflake for investment banking payments | Datasphere Dynamics</title>
 <meta name="description" content="A wave based Oracle to Snowflake migration for investment banking payments, with automated reconciliation, a governed semantic layer and improved reliability.">
+<meta property="og:title" content="Case study: Oracle to Snowflake for investment banking payments | Datasphere Dynamics">
+<meta property="og:description" content="A wave based Oracle to Snowflake migration for investment banking payments, with automated reconciliation, a governed semantic layer and improved reliability.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Datasphere Dynamics">
+<meta name="theme-color" content="#0a0a0c">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://static.wixstatic.com" crossorigin>
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<header class="site-header">
-<div class="wrap header-inner">
-<a class="brand" href="/" aria-label="Datasphere Dynamics home">
-<svg class="brand-mark" viewBox="0 499 505 502" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M463.6 779.8h35.9C469 878.9 382.4 961.6 281.1 985.4c-80.9 18.9-189.1 16.4-272 9.8-2.9-.2-5.8.1-8.7 0l49.7-215.4h-36l62.8-277.9h72.2c2.2-.1 4.2-1 6.4-1.1 71.2-1.1 182.9-7 244.8 30.6 83.3 50.5 92.4 163.6 63.3 248.4m-169.5 0c14.4-47.3 35.5-122.2-23.6-147.2-16.7-7-33.9-6.7-51.4-9.4l-39.2 156.5h36.8l-21.2 93h31.8c3.4 0 22.5-5.6 27-7.1 38.3-12.7 66-47.4 75.7-85.9h-35.9Z"/></svg>
-<span class="brand-text">Datasphere<br>Dynamics</span>
-</a>
-<nav class="site-nav">
-<a href="/">Home</a>
-<a href="/services">Our Services</a>
-<a href="/industries">Industries</a>
-<a href="/solutions">Solutions</a>
-<a href="/technology-partners">Technology Partners</a>
-</nav>
-<a class="btn" href="/contact">Get in touch</a>
-</div>
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="/" aria-label="Datasphere Dynamics home">
+      <svg viewBox="0 499 505 502" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#fff" d="M172.9 999.9c-1.5-.6-2.8-1.8-3.4-3.3-.6-1.4-.6-3 0-4.4l58.6-140.6c.9-2.2 3.1-3.7 5.5-3.7h81.3c9.9 0 19.6-2 28.6-5.8 8.8-3.7 16.8-9.1 23.5-15.8 6.7-6.8 12-14.8 15.7-23.6 3.8-9.1 5.7-18.8 5.7-28.8s-1.9-19.7-5.7-28.8c-3.7-8.8-9-16.8-15.7-23.6-6.7-6.7-14.7-12.1-23.5-15.8-9-3.8-18.7-5.8-28.6-5.8h-81.3c-2.4 0-4.6-1.5-5.5-3.7l-58.6-140.6c-.6-1.4-.6-3 0-4.4.6-1.5 1.9-2.7 3.4-3.3 1.4-.6 3-.6 4.4 0l.3.1h137.3c26.6 0 52.5 5.3 76.9 15.7 23.6 10 44.9 24.4 63.1 42.7 18.2 18.3 32.5 39.7 42.4 63.5 10.3 24.6 15.5 50.7 15.5 77.6s-5.2 53-15.5 77.6c-9.9 23.8-24.2 45.2-42.4 63.5-18.2 18.3-39.5 32.7-63.1 42.7-24.4 10.4-50.3 15.7-76.9 15.7H177.6l-.3.1c-.7.3-1.5.4-2.2.4-.8 0-1.5-.1-2.2-.4z"/></svg>
+      <span class="brand__txt">Datasphere<br>Dynamics</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/services">Our Services</a>
+      <a href="/industries">Industries</a>
+      <a href="/solutions">Solutions</a>
+      <a href="/technology-partners">Technology Partners</a>
+      <a class="btn btn--g btn--sm nav__cta" href="/contact">Get in touch</a>
+    </nav>
+  </div>
 </header>
-
-<section class="hero">
-<div class="wrap">
-<p class="eyebrow">Case study</p>
-<h1>Oracle to Snowflake for investment banking payments</h1>
-<ul class="tags">
+<main>
+  <section class="hero hero--band center">
+    <div class="hero__bg"><img src="https://static.wixstatic.com/media/11062b_40d3bbdabcd3461abfe2a96c4d0219b0f000.jpg/v1/fill/w_1900,h_700,al_c,q_85,enc_auto/img.jpg" alt="" fetchpriority="high"></div>
+    <div class="wrap hero__in">
+      <h1>Oracle to Snowflake for investment banking payments</h1>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <ul class="ilist rv" style="max-width:58ch;margin-inline:auto">
 <li>Data migration</li>
 <li>Financial services</li>
 <li>Payments analytics</li>
 <li>Data enablement</li>
 <li>BI modernization</li>
 </ul>
-</div>
-</section>
-
-<section>
-<div class="wrap">
-<div class="section-head"><h2>Outcomes</h2></div>
-<ul class="ticks">
+    </div>
+  </section>
+  <section class="sec alt">
+    <div class="wrap">
+      <div class="center rv"><h2>Outcomes</h2></div>
+      <ul class="ilist rv" style="max-width:58ch;margin-inline:auto">
 <li>Automated reconciliation and validation to support controlled cutover</li>
 <li>Consistent KPI definitions across payment rails and reporting teams</li>
 <li>Faster reporting delivery through modern modelling standards and reusable datasets</li>
@@ -53,77 +62,87 @@
 <li>Reduced reporting friction by aligning stakeholders on a single set of definitions and publishing a governed semantic layer for consistent metrics</li>
 <li>Improved reliability by introducing monitoring, data quality checks, and a clear release process for pipelines and models</li>
 </ul>
-</div>
-</section>
-
-<section class="alt">
-<div class="wrap prose">
-<h2 style="margin-top:0">Challenge</h2>
-<p>The payments function needed to modernize a reporting estate that had grown complex over time. Critical payment and event data was stored and reported from Oracle with transformation logic spread across stored procedures, scheduled jobs, and manual steps.</p>
-<p>Operational and control teams relied on similar reports with different definitions, which created rework and reduced trust. Change cycles were slow because reporting and transformation logic were tightly coupled, and validation was time consuming during month end and audit periods.</p>
-<p>The team needed a migration approach that reduced risk, preserved auditability, and delivered improved performance without interrupting daily operations.</p>
-
-<h2>Solution</h2>
-<p>Datasphere Dynamics delivered a controlled migration from Oracle to Snowflake with a refactor first approach.</p>
-<p>We began by mapping the payments reporting landscape and grouping assets into migration waves based on business criticality and cutover risk. We introduced automated reconciliation checks so every migrated dataset could be validated for completeness and accuracy.</p>
-<p>To modernize analytics, we rebuilt transformations using consistent modelling standards, embedded testing, and documentation. We then delivered a governed BI layer with agreed KPI definitions to remove reporting inconsistency across teams.</p>
-<p>Alongside the build, we introduced practical operating standards for quality, monitoring, and releases so the platform remained reliable after cutover.</p>
-
-<div class="meta-grid">
-<div>
-<h4>Technology used</h4>
-<ul class="pill-list">
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="center rv"><h2>Challenge</h2></div>
+      <p class="lead center rv" style="margin:1.2rem auto 0">The payments function needed to modernize a reporting estate that had grown complex over time. Critical payment and event data was stored and reported from Oracle with transformation logic spread across stored procedures, scheduled jobs, and manual steps.</p>
+      <p class="lead center rv" style="margin:1.2rem auto 0">Operational and control teams relied on similar reports with different definitions, which created rework and reduced trust. Change cycles were slow because reporting and transformation logic were tightly coupled, and validation was time consuming during month end and audit periods.</p>
+      <p class="lead center rv" style="margin:1.2rem auto 0">The team needed a migration approach that reduced risk, preserved auditability, and delivered improved performance without interrupting daily operations.</p>
+    </div>
+  </section>
+  <section class="sec alt">
+    <div class="wrap">
+      <div class="center rv"><h2>Solution</h2></div>
+      <p class="lead center rv" style="margin:1.2rem auto 0">Datasphere Dynamics delivered a controlled migration from Oracle to Snowflake with a refactor first approach.</p>
+      <p class="lead center rv" style="margin:1.2rem auto 0">We began by mapping the payments reporting landscape and grouping assets into migration waves based on business criticality and cutover risk. We introduced automated reconciliation checks so every migrated dataset could be validated for completeness and accuracy.</p>
+      <p class="lead center rv" style="margin:1.2rem auto 0">To modernize analytics, we rebuilt transformations using consistent modelling standards, embedded testing, and documentation. We then delivered a governed BI layer with agreed KPI definitions to remove reporting inconsistency across teams.</p>
+      <p class="lead center rv" style="margin:1.2rem auto 0">Alongside the build, we introduced practical operating standards for quality, monitoring, and releases so the platform remained reliable after cutover.</p>
+      <div class="grid g3" style="margin-top:clamp(40px,5vw,64px)">
+        <article class="card rv"><h4>Technology used</h4><ul class="ilist">
 <li>Oracle</li>
 <li>AWS S3</li>
 <li>Snowflake</li>
 <li>dbt</li>
 <li>Power BI</li>
-</ul>
-</div>
-<div>
-<h4>Full time resources</h4>
-<p>5 dedicated team members</p>
-</div>
-<div>
-<h4>Project duration</h4>
-<p>9 months</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="cta">
-<div class="wrap">
-<h2>Planning a similar migration?</h2>
-<p class="lead" style="margin:0 auto">We can assess your estate, group it into controlled waves, and give you a cutover plan your risk teams will sign off.</p>
-<p style="margin-top:30px"><a class="btn btn-solid" href="/contact">Request a demo</a></p>
-</div>
-</section>
-
-<footer class="site-footer">
-<div class="wrap footer-grid">
-<div>
-<h4>Republic of Ireland</h4>
-<p>Registered Office<br>77 Camden Street Lower<br>Dublin 2, D02 XE80</p>
-<p>Company No: 759167</p>
-</div>
-<div>
-<h4>United Kingdom</h4>
-<p>Registered Office<br>9 Owen Street<br>Manchester, M15 4UD</p>
-<p>Company No: 10402179</p>
-</div>
-<div>
-<h4>Contact</h4>
-<p><a href="mailto:consulting@datasphered.com">consulting@datasphered.com</a><br><a href="tel:+353899747276">+353 (89) 974 7276</a></p>
-<h4 style="margin-top:22px">Follow us</h4>
-<p><a href="https://www.linkedin.com/company/data-sphere-dynamics/" target="_blank" rel="noopener">LinkedIn</a></p>
-</div>
-<div>
-<h4>Legal</h4>
-<p class="footer-links"><a href="/cookie-policy">Cookie Policy</a><a href="/legal-notice">Legal Notice</a><a href="/privacy-policy">Privacy Policy</a></p>
-<p class="copy">&copy; 2026 Datasphere Dynamics Ltd.</p>
-</div>
-</div>
+</ul></article>
+        <article class="card rv"><h4>Full time resources</h4><p>5 dedicated team members</p></article>
+        <article class="card rv"><h4>Project duration</h4><p>9 months</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="center rv"><h2>Planning a similar migration?</h2></div>
+      <p class="lead center rv" style="margin:1.2rem auto 0">We can assess your estate, group it into controlled waves, and give you a cutover plan your risk teams will sign off.</p>
+      <p class="eyebrow center rv"><a class="btn btn-solid" href="/contact">Request a demo</a></p>
+      <div class="grid g4" style="margin-top:clamp(40px,5vw,64px)">
+        <article class="card rv"><h4>Republic of Ireland</h4><p>Registered Office<br>77 Camden Street Lower<br>Dublin 2, D02 XE80</p><p>Company No: 759167</p></article>
+        <article class="card rv"><h4>United Kingdom</h4><p>Registered Office<br>9 Owen Street<br>Manchester, M15 4UD</p><p>Company No: 10402179</p></article>
+        <article class="card rv"><h4>Contact</h4><p><a href="mailto:consulting@datasphered.com">consulting@datasphered.com</a><br><a href="tel:+353899747276">+353 (89) 974 7276</a></p></article>
+        <article class="card rv"><h4>Follow us</h4><p><a href="https://www.linkedin.com/company/data-sphere-dynamics/" target="_blank" rel="noopener">LinkedIn</a></p></article>
+        <article class="card rv"><h4>Legal</h4><p><a href="/cookie-policy">Cookie Policy</a><a href="/legal-notice">Legal Notice</a><a href="/privacy-policy">Privacy Policy</a></p><p>© 2026 Datasphere Dynamics Ltd.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__top">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:1.3rem"><svg viewBox="0 499 505 502" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#fff" d="M172.9 999.9c-1.5-.6-2.8-1.8-3.4-3.3-.6-1.4-.6-3 0-4.4l58.6-140.6c.9-2.2 3.1-3.7 5.5-3.7h81.3c9.9 0 19.6-2 28.6-5.8 8.8-3.7 16.8-9.1 23.5-15.8 6.7-6.8 12-14.8 15.7-23.6 3.8-9.1 5.7-18.8 5.7-28.8s-1.9-19.7-5.7-28.8c-3.7-8.8-9-16.8-15.7-23.6-6.7-6.7-14.7-12.1-23.5-15.8-9-3.8-18.7-5.8-28.6-5.8h-81.3c-2.4 0-4.6-1.5-5.5-3.7l-58.6-140.6c-.6-1.4-.6-3 0-4.4.6-1.5 1.9-2.7 3.4-3.3 1.4-.6 3-.6 4.4 0l.3.1h137.3c26.6 0 52.5 5.3 76.9 15.7 23.6 10 44.9 24.4 63.1 42.7 18.2 18.3 32.5 39.7 42.4 63.5 10.3 24.6 15.5 50.7 15.5 77.6s-5.2 53-15.5 77.6c-9.9 23.8-24.2 45.2-42.4 63.5-18.2 18.3-39.5 32.7-63.1 42.7-24.4 10.4-50.3 15.7-76.9 15.7H177.6l-.3.1c-.7.3-1.5.4-2.2.4-.8 0-1.5-.1-2.2-.4z"/></svg><span class="brand__txt">Datasphere<br>Dynamics</span></a>
+        <p style="max-width:26ch">Governed data platforms for regulated financial services.</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <div class="ft__links">
+          <a href="mailto:consulting@datasphered.com">consulting@datasphered.com</a>
+          <a href="tel:+353899747276">+353 (89) 974 7276</a>
+        </div>
+        <div class="ft__soc">
+          <a href="https://www.linkedin.com/company/data-sphere-dynamics/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.4 21h5.16V9.75H2.4V21zm7.77 0h5.16v-6.2c0-3.32 4.33-3.59 4.33 0V21h5.16v-7.98c0-8.06-9.22-7.76-9.49-3.8V9.75h-5.16V21z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Republic of Ireland</h5>
+        <address>Registered Office<br>77 Camden Street Lower<br>Dublin 2, D02 XE80<br><span style="color:var(--muted2)">Company No: 759167</span></address>
+      </div>
+      <div>
+        <h5>United Kingdom</h5>
+        <address>Registered Office<br>9 Owen Street<br>Manchester, M15 4UD<br><span style="color:var(--muted2)">Company No: 10402179</span></address>
+      </div>
+    </div>
+    <div class="ft__bot">
+      <p>&copy; 2026 Datasphere Dynamics. All rights reserved.</p>
+      <div class="ft__links" style="display:flex;gap:22px;flex-wrap:wrap">
+        <a href="/legal-notice">Legal Notice</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/cookie-policy">Cookies</a>
+      </div>
+    </div>
+  </div>
 </footer>
+<script src="/app.js" defer></script>
 </body>
 </html>
