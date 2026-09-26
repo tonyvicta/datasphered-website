@@ -20,6 +20,10 @@ Static rebuild of the Datasphere Dynamics website, migrated off Wix and hosted o
 | 404.html | not found page |
 | styles.css | shared stylesheet |
 | vercel.json | clean URLs, legacy Wix redirects, security headers |
+| favicon.svg, icon-192.png, icon-512.png, apple-touch-icon.png | browser and home-screen icons (the "D" mark from logo.svg) |
+| og-image.png | 1200x630 social share image |
+| site.webmanifest | web app manifest |
+| sitemap.xml, robots.txt | search engine discovery; canonical host is https://www.datasphered.com |
 
 Plain HTML and CSS. There is no build step, so Vercel should use the "Other" framework preset with no build command and the repository root as the output directory.
 
