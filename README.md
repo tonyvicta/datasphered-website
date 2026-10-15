@@ -25,8 +25,8 @@ Plain HTML and CSS. There is no build step, so Vercel should use the "Other" fra
 
 ## Before go live
 
-1. **Contact form.** `contact.html` posts to `https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID`. Create a free form endpoint (for example at formspree.io) and replace that ID, otherwise submissions go nowhere. The email and phone links work regardless.
-2. **Imagery.** The original Wix pages used photographic and abstract background images. This rebuild uses CSS gradients instead. Download the originals from the Wix Media Manager, commit them to an `assets/` folder, and reference them if you want the exact look back.
+1. **Contact form.** The form opens the visitor's email app with a pre-filled message to consulting@datasphered.com (mailto). It works without a backend. For silent in-page submission, swap in a form service such as Formspree later.
+2. **Imagery.** Images are still hotlinked from static.wixstatic.com, so they will break if the Wix plan is cancelled. Run `python3 scripts/localise-images.py` once from the repo root to download them into `assets/img/` and rewrite the HTML, then commit.
 3. **Logo.** The "D" mark is inlined as SVG in the header of each page. The wordmark is set in Montserrat rather than the original brand font.
 4. **Legal pages.** The cookie policy previously referenced Wix as the platform. Those references were made generic. Review all three legal pages before publishing.
 5. **Fonts.** Inter and Montserrat are loaded from Google Fonts. Swap in the real brand typefaces if you have licences for them.
@@ -42,3 +42,9 @@ python3 -m http.server 8000
 Note that clean URLs such as `/services` only work on Vercel. Locally use `/services.html`.
 # datasphered-website
 Datasphere Dynamics website - static rebuild for Verel hosting
+
+## SEO and housekeeping
+
+- `favicon.svg` is an adaptive (light/dark) version of the D mark.
+- `robots.txt` and `sitemap.xml` are served from the root. Submit the sitemap in Google Search Console.
+- Every page has a canonical URL and `og:url`; `404.html` is marked `noindex`.
