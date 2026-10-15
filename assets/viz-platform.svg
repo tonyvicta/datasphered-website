@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-label="Diagram: legacy sources flow through a secure bridge into a governed platform with raw, modelled and trusted layers, then out to reporting, data products and AI">
+<defs>
+<pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="rgba(255,255,255,.035)"/></pattern>
+<radialGradient id="glow" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#5fc9d6" stop-opacity=".16"/><stop offset="1" stop-color="#5fc9d6" stop-opacity="0"/></radialGradient>
+<linearGradient id="slab" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b2128"/><stop offset="1" stop-color="#14171d"/></linearGradient>
+<linearGradient id="slabHi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d3a40"/><stop offset="1" stop-color="#152227"/></linearGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+<style>
+.flow{fill:none;stroke:#5fc9d6;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:4 14;animation:dash 1.6s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-36}}
+.pulse{animation:pulse 3.2s ease-in-out infinite;transform-origin:450px 212px}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:.95}}
+@media (prefers-reduced-motion:reduce){.flow,.pulse{animation:none}}
+</style>
+</defs>
+<rect width="900" height="720" fill="#0e1015"/>
+<rect width="900" height="720" fill="url(#grid)"/>
+<rect width="900" height="720" fill="url(#glow)"/>
+<g transform="translate(0 26)"><text x="48" y="78" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="3" fill="#5fc9d6">GOVERNED DATA FLOW</text>
+<text x="48" y="146" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="2.4" fill="#7d838d">SOURCES</text>
+<text x="340" y="146" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="2.4" fill="#7d838d">PLATFORM</text>
+<text x="632" y="146" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="2.4" fill="#7d838d">OUTCOMES</text>
+<path d="M268 212 C304 212 304 428 340 428" fill="none" stroke="rgba(95,201,214,.18)" stroke-width="2"/><path d="M268 320 C304 320 304 428 340 428" fill="none" stroke="rgba(95,201,214,.18)" stroke-width="2"/><path d="M268 428 C304 428 304 428 340 428" fill="none" stroke="rgba(95,201,214,.18)" stroke-width="2"/><path d="M560 212 C596 212 596 212 632 212" fill="none" stroke="rgba(95,201,214,.18)" stroke-width="2"/><path d="M560 212 C596 212 596 320 632 320" fill="none" stroke="rgba(95,201,214,.18)" stroke-width="2"/><path d="M560 212 C596 212 596 428 632 428" fill="none" stroke="rgba(95,201,214,.18)" stroke-width="2"/><path class="flow" d="M268 212 C304 212 304 428 340 428" style="animation-delay:-0.00s"/><path class="flow" d="M268 320 C304 320 304 428 340 428" style="animation-delay:-0.35s"/><path class="flow" d="M268 428 C304 428 304 428 340 428" style="animation-delay:-0.70s"/><path class="flow" d="M560 212 C596 212 596 212 632 212" style="animation-delay:-1.05s"/><path class="flow" d="M560 212 C596 212 596 320 632 320" style="animation-delay:-1.40s"/><path class="flow" d="M560 212 C596 212 596 428 632 428" style="animation-delay:-1.75s"/>
+<rect class="pulse" x="330" y="166" width="240" height="92" rx="22" fill="#5fc9d6" opacity=".5" filter="url(#soft)"/>
+<g><rect x="48" y="176" width="220" height="72" rx="16" fill="#15171d" stroke="rgba(255,255,255,.16)" stroke-width="1.5"/>
+<circle cx="78" cy="212" r="6" fill="#5fc9d6"/><circle cx="78" cy="212" r="12" fill="none" stroke="#5fc9d6" stroke-opacity=".35"/>
+<text x="102" y="219" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#fff">Core banking</text></g><g><rect x="48" y="284" width="220" height="72" rx="16" fill="#15171d" stroke="rgba(255,255,255,.16)" stroke-width="1.5"/>
+<circle cx="78" cy="320" r="6" fill="#5fc9d6"/><circle cx="78" cy="320" r="12" fill="none" stroke="#5fc9d6" stroke-opacity=".35"/>
+<text x="102" y="327" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#fff">Payments</text></g><g><rect x="48" y="392" width="220" height="72" rx="16" fill="#15171d" stroke="rgba(255,255,255,.16)" stroke-width="1.5"/>
+<circle cx="78" cy="428" r="6" fill="#5fc9d6"/><circle cx="78" cy="428" r="12" fill="none" stroke="#5fc9d6" stroke-opacity=".35"/>
+<text x="102" y="435" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#fff">CRM &amp; risk</text></g>
+<g><rect x="340" y="176" width="220" height="72" rx="16" fill="url(#slabHi)" stroke="#8fe0ea" stroke-width="1.5"/>
+<text x="364" y="209" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#fff">Trusted</text>
+<text x="364" y="232" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="14" fill="#a8adb6">Governed metrics</text>
+<circle cx="530" cy="212" r="11" fill="rgba(95,201,214,.14)" stroke="#5fc9d6" stroke-opacity=".6"/>
+<path d="M525 212 l3.5 3.5 l6.5 -7" fill="none" stroke="#8fe0ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g><g><rect x="340" y="284" width="220" height="72" rx="16" fill="url(#slab)" stroke="rgba(95,201,214,.55)" stroke-width="1.5"/>
+<text x="364" y="317" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#fff">Modelled</text>
+<text x="364" y="340" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="14" fill="#a8adb6">Tested in dbt</text>
+<circle cx="530" cy="320" r="11" fill="rgba(95,201,214,.14)" stroke="#5fc9d6" stroke-opacity=".6"/>
+<path d="M525 320 l3.5 3.5 l6.5 -7" fill="none" stroke="#8fe0ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g><g><rect x="340" y="392" width="220" height="72" rx="16" fill="url(#slab)" stroke="rgba(95,201,214,.35)" stroke-width="1.5"/>
+<text x="364" y="425" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#fff">Raw</text>
+<text x="364" y="448" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="14" fill="#a8adb6">Reconciled loads</text>
+<circle cx="530" cy="428" r="11" fill="rgba(95,201,214,.14)" stroke="#5fc9d6" stroke-opacity=".6"/>
+<path d="M525 428 l3.5 3.5 l6.5 -7" fill="none" stroke="#8fe0ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g><rect x="632" y="176" width="220" height="72" rx="16" fill="#15171d" stroke="#5fc9d6" stroke-width="1.5"/>
+<circle cx="662" cy="212" r="6" fill="#5fc9d6"/><circle cx="662" cy="212" r="12" fill="none" stroke="#5fc9d6" stroke-opacity=".35"/>
+<text x="686" y="219" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#fff">Reporting</text></g><g><rect x="632" y="284" width="220" height="72" rx="16" fill="#15171d" stroke="#5fc9d6" stroke-width="1.5"/>
+<circle cx="662" cy="320" r="6" fill="#5fc9d6"/><circle cx="662" cy="320" r="12" fill="none" stroke="#5fc9d6" stroke-opacity=".35"/>
+<text x="686" y="327" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#fff">Data products</text></g><g><rect x="632" y="392" width="220" height="72" rx="16" fill="#15171d" stroke="#5fc9d6" stroke-width="1.5"/>
+<circle cx="662" cy="428" r="6" fill="#5fc9d6"/><circle cx="662" cy="428" r="12" fill="none" stroke="#5fc9d6" stroke-opacity=".35"/>
+<text x="686" y="435" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="600" fill="#fff">AI &amp; apps</text></g>
+<g transform="translate(286 492)"><rect x="-6" y="-2" width="146" height="34" rx="17" fill="#0e1015" stroke="rgba(95,201,214,.45)"/>
+<path d="M12 12v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#5fc9d6" stroke-width="1.8"/><rect x="9" y="12" width="16" height="12" rx="2.5" fill="#5fc9d6"/>
+<text x="34" y="21" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="600" fill="#fff">Secure bridge</text></g>
+<rect x="124.0" y="556" width="120" height="44" rx="22" fill="rgba(95,201,214,.08)" stroke="rgba(95,201,214,.35)"/><text x="184.0" y="584" text-anchor="middle" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="500" fill="#8fe0ea">Lineage</text><rect x="260.0" y="556" width="176" height="44" rx="22" fill="rgba(95,201,214,.08)" stroke="rgba(95,201,214,.35)"/><text x="348.0" y="584" text-anchor="middle" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="500" fill="#8fe0ea">Access policies</text><rect x="452.0" y="556" width="172" height="44" rx="22" fill="rgba(95,201,214,.08)" stroke="rgba(95,201,214,.35)"/><text x="538.0" y="584" text-anchor="middle" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="500" fill="#8fe0ea">Quality checks</text><rect x="640.0" y="556" width="136" height="44" rx="22" fill="rgba(95,201,214,.08)" stroke="rgba(95,201,214,.35)"/><text x="708.0" y="584" text-anchor="middle" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="500" fill="#8fe0ea">Audit trail</text>
+<path d="M442 270 l8 -8 l8 8" fill="none" stroke="#5fc9d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/><path d="M442 378 l8 -8 l8 8" fill="none" stroke="#5fc9d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/></g></svg>
