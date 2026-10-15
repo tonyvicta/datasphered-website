@@ -358,3 +358,10 @@ section{position:relative}
 .hero--band .cta-row{margin-top:2rem}
 main>.hero--band:only-child .hero__in{padding-block:clamp(90px,14vw,170px)}
 .twocol h2{font-size:clamp(1.75rem,3vw,2.4rem)}
+
+/* partner logos: original brand colours, crisp self-hosted files */
+.logos img{filter:none;opacity:1;max-height:none;width:auto}
+.logos figure{min-height:96px;padding:24px 20px}
+.logo-plate{display:flex;align-items:center;height:78px;padding:0 20px;margin:-2px 0 .9rem;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015))}
+.logo-plate img{width:auto;max-width:100%;object-fit:contain}
+@media(max-width:700px){.logos figure{min-height:76px;padding:18px 12px}.logos img{transform:scale(.85)}.logo-plate{height:68px}}
