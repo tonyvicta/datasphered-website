@@ -25,7 +25,7 @@ Plain HTML and CSS. There is no build step, so Vercel should use the "Other" fra
 
 ## Before go live
 
-1. **Contact form.** The form opens the visitor's email app with a pre-filled message to consulting@datasphered.com (mailto). It works without a backend. For silent in-page submission, swap in a form service such as Formspree later.
+1. **Contact form.** Submissions are sent in the background to Formspree, which emails them to consulting@datasphered.com. Set `FORMSPREE_ID` near the bottom of `contact.html` to your form ID (the part after `formspree.io/f/`). While it is empty, the form falls back to opening the visitor's email app with a pre-filled message. A hidden `_gotcha` field catches simple spam bots.
 2. **Imagery.** Images are still hotlinked from static.wixstatic.com, so they will break if the Wix plan is cancelled. Run `python3 scripts/localise-images.py` once from the repo root to download them into `assets/img/` and rewrite the HTML, then commit.
 3. **Logo.** The "D" mark is inlined as SVG in the header of each page. The wordmark is set in Montserrat rather than the original brand font.
 4. **Legal pages.** The cookie policy previously referenced Wix as the platform. Those references were made generic. Review all three legal pages before publishing.
