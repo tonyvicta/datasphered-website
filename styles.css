@@ -152,6 +152,7 @@ section{position:relative}
 /* form */
 .form{display:grid;gap:16px;grid-template-columns:1fr 1fr}
 .form .full{grid-column:1/-1}
+.form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .field{display:grid;gap:7px}
 .field label{font-size:.82rem;font-weight:500;color:var(--muted)}
 .field input,.field textarea,.field select{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:13px 15px;color:#fff;transition:border-color .2s,background .2s}
